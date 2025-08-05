@@ -1,0 +1,166 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "IAM User and User Group Stack for Project 1"
+
+Resources:
+  IAMGroupPP1Finance:
+    Type: "AWS::IAM::Group"
+    Properties:
+      GroupName: "PP1_Finance"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AWSBudgetsReadOnlyAccess"
+      - "arn:aws:iam::aws:policy/AWSBillingReadOnlyAccess"
+
+  IAMGroupPP1Developers:
+    Type: "AWS::IAM::Group"
+    Properties:
+      GroupName: "PP1_Developers"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess"
+      - "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+      - "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+  
+  IAMGroupPP1Analysts:
+    Type: "AWS::IAM::Group"
+    Properties:
+      GroupName: "PP1_Analysts"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+      - "arn:aws:iam::aws:policy/AmazonRDSReadOnlyAccess"
+  
+  IAMGroupPP1Operations:
+    Type: "AWS::IAM::Group"
+    Properties:
+      GroupName: "PP1_Operations"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/CloudWatchFullAccessV2"
+      - "arn:aws:iam::aws:policy/AmazonSSMFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+      - "arn:aws:iam::aws:policy/AmazonRDSDataFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
+
+
+
+  IAMUserPP1JamesDev:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_James_Dev"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Developers"
+
+  IAMUserPP1LucasDev:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Lucas_Dev"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Developers"
+
+  IAMUserPP1SarahDev:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Sarah_Dev"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Developers"
+  
+  IAMUserPP1EleanorDev:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Eleanor_Dev"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Developers"
+  
+
+  IAMUserPP1OliviaOps:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Olivia_Ops"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Operations"
+  
+  IAMUserPP1DavidOps:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_David_Ops"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Operations"
+
+
+  IAMUserPP1SophiaFinance:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Sophia_Finance"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Finance"
+
+
+  IAMUserPP1DanielData:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Daniel_Data"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Analysts"
+
+  IAMUserPP1JosephData:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Joseph_Data"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Analysts"
+
+  IAMUserPP1AvaData:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_Ava_Data"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      Groups:
+      - Ref: "IAMGroupPP1Analysts"
+
+  
