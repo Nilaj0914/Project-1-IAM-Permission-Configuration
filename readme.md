@@ -14,6 +14,13 @@ Now that their product is live, they need to address their cloud security fundam
 
 This negligence has exposed their company to serious security threats.
 
+## Current Infrastructure Setup
+![Infrastructure Diagram](Images/image7.png)
+  * EC2 instances running their application
+  * S3 buckets storing user data and application assets
+  * RDS database for user information
+  * CloudWatch for monitoring
+
 ### **Key Issues Identified** 
 
 * **Insecure AWS Root User Account**
