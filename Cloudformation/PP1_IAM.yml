@@ -2,6 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "IAM User and User Group Stack for Project 1"
 
 Resources:
+
   IAMGroupPP1Finance:
     Type: "AWS::IAM::Group"
     Properties:
@@ -38,6 +39,17 @@ Resources:
       - "arn:aws:iam::aws:policy/AmazonRDSDataFullAccess"
       - "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
 
+  IAMUserPP1StartupCoAdmin:
+    Type: "AWS::IAM::User"
+    Properties:
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/IAMUserChangePassword"
+      UserName: "PP1_StartupCo_Admin"
+      LoginProfile:
+        Password: YourSecurePassword1@!
+        PasswordResetRequired: true
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AdministratorAccess"
 
 
   IAMUserPP1JamesDev:
