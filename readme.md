@@ -33,7 +33,7 @@ This negligence has exposed their company to serious security threats.
   - Every employee can access every resource currently used by the company unrestricted, which vastly increases the attack surface in case of a security breach. Principle of Least Privilege is also not followed here.
   - IAM User Groups are also not setup which makes assigning and revoking multiple permissions based on job role much more complicated.
 
-### Proposed Solution ###
+## Proposed Solution ##
 
 * **Secure the AWS Root User Account**
   * Enable MFA
