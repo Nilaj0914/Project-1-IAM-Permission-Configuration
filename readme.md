@@ -58,7 +58,7 @@ The following section will showcase the step-by-step implementation of the propo
 
 * Enable MFA
 
-  ![Adding a Virtual MFA device to the Root User Account](Images/image.png)
+  ![Adding a Virtual MFA device to the Root User Account](Images/image1.png)
 
 * Store the root account credentials securely using AWS Secrets Manager
   

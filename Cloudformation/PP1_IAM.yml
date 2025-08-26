@@ -44,9 +44,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_StartupCo_Admin"
+      UserName: "[REDACTED]" # Replace with your actual admin username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/AdministratorAccess"
@@ -57,9 +57,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_James_Dev"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Developers"
@@ -69,9 +69,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Lucas_Dev"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Developers"
@@ -81,9 +81,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Sarah_Dev"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Developers"
@@ -93,9 +93,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Eleanor_Dev"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Developers"
@@ -106,9 +106,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Olivia_Ops"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Operations"
@@ -118,9 +118,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_David_Ops"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Operations"
@@ -131,9 +131,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Sophia_Finance"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Finance"
@@ -144,9 +144,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Daniel_Data"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Analysts"
@@ -156,9 +156,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Joseph_Data"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Analysts"
@@ -168,9 +168,9 @@ Resources:
     Properties:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/IAMUserChangePassword"
-      UserName: "PP1_Ava_Data"
+      UserName: "[REDACTED]" # Replace with your actual username
       LoginProfile:
-        Password: YourSecurePassword1@!
+        Password: "[REDACTED]" # Replace with your actual secure password
         PasswordResetRequired: true
       Groups:
       - Ref: "IAMGroupPP1Analysts"
