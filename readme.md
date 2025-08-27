@@ -1,4 +1,4 @@
-# IAM Permission Configuration
+# StartupCo IAM Permission Configuration
 
 Note: This is fictional case study for educational and portfolio purposes
 
